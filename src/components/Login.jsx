@@ -1,45 +1,52 @@
 import "./Login.css";
 
 function Login() {
-  return (
-    <div className="login-container">
-      
-      <div className="login-box">
+    return (
+        <div className="login-container">
 
-        <h1 className="titulo">
-          Sistema de Requisição de Materiais
-        </h1>
+            {/* LOGO NO CANTO SUPERIOR DIREITO */}
+            <img
+                src="https://dummyimage.com/140x50/008542/ffffff&text=EMPRESA"
+                alt="Logo"
+                className="logo-top"
+            />
 
-        <h2 className="subtitulo">
-          INFRAESTRUTURA - RECAP
-        </h2>
+            <div className="login-box">
 
-        <form className="form">
-          <input 
-            type="text" 
-            placeholder="Usuário"
-            className="input"
-          />
+                <h1 className="titulo">
+                    Sistema de Requisição de Materiais
+                </h1>
 
-          <input 
-            type="password" 
-            placeholder="Senha"
-            className="input"
-          />
+                <h2 className="subtitulo">
+                    INFRAESTRUTURA - RECAP
+                </h2>
 
-          <button type="submit" className="botao">
-            Entrar
-          </button>
+                <form className="form">
+                    <input
+                        type="text"
+                        placeholder="Usuário"
+                        className="input"
+                    />
 
-          <span className="esqueci">
-            Esqueci minha senha
-          </span>
-        </form>
+                    <input
+                        type="password"
+                        placeholder="Senha"
+                        className="input"
+                    />
 
-      </div>
+                    <button type="submit" className="botao">
+                        Entrar
+                    </button>
 
-    </div>
-  );
+                    <span className="esqueci">
+                        Esqueci minha senha
+                    </span>
+                </form>
+
+            </div>
+
+        </div>
+    );
 }
 
 export default Login;
