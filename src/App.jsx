@@ -1,5 +1,7 @@
+import Login from "./components/Login";
+
 function App() {
-  return <h1>Sistema de Requisição de Materiais</h1>
+  return <Login />;
 }
 
-export default App
+export default App;
